@@ -1,0 +1,108 @@
+{
+	"name": "Ev_L1",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Ev_MainMenu"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Ev_commonTransition"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Layout 1: At start of layout",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 341953498567664
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 144167292532185,
+							"parameters": {
+								"variable": "soundCounter",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 200156082183070,
+							"parameters": {
+								"variable": "currentLayout",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 455101697991089,
+							"parameters": {
+								"variable": "currentLayer",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 643239833093618,
+							"parameters": {
+								"layer": "currentLayer",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 386104359075068,
+							"parameters": {
+								"variable": "currentLayoutMaxLayers",
+								"value": "(LayoutMaxLayers.At(1,0) -1)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "LayoutDesc",
+							"sid": 667642615128712,
+							"parameters": {
+								"text": "\"Layout\"&currentLayout&\"        Layer\"&currentLayer"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 386728757116861,
+							"parameters": {
+								"variable": "testLayoutName",
+								"value": "LayoutMaxLayers.At(0,0)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 802946129700440,
+							"parameters": {
+								"variable": "testMaxlayer",
+								"value": "LayoutMaxLayers.At(1,0)"
+							}
+						}
+					],
+					"sid": 864335019322746
+				}
+			],
+			"sid": 228148033248897
+		}
+	],
+	"sid": 397137158308878
+}

@@ -1,0 +1,127 @@
+{
+	"name": "Ev_MainMenu_Set3",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Ev_commonTransition"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 316849529156018
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 863106329858288,
+					"parameters": {
+						"variable": "currentLayer",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 196047521976907,
+					"parameters": {
+						"layer": "currentLayer",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "lessonDescription",
+					"sid": 361546670374896,
+					"parameters": {
+						"text": "lessonButtonFamily.LayoutDescription"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "lessonDescription",
+					"sid": 506751001641098,
+					"parameters": {
+						"size-pt": "60"
+					}
+				},
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 198868509600425,
+					"parameters": {
+						"tag": "\"MaxLayers\"",
+						"file": "ArrayLayoutMaxLayers.json"
+					}
+				}
+			],
+			"sid": 136979700557263
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 528533030280762,
+					"parameters": {
+						"tag": "\"MaxLayers\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "LayoutMaxLayers",
+					"sid": 749117323083450,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				}
+			],
+			"sid": 466594262131145
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 917430419638466,
+					"parameters": {
+						"object": "lessonButton3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 612259980553669,
+					"parameters": {
+						"layout": "lessonButton3.goToLayout"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 956787017244103
+				},
+				{
+					"id": "load-layout-images-by-name",
+					"objectClass": "System",
+					"sid": 625643891857737,
+					"parameters": {
+						"layout": "\"Layout \"&currentLayout"
+					}
+				}
+			],
+			"sid": 738052029678265
+		}
+	],
+	"sid": 947732848202624
+}

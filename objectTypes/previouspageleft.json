@@ -1,0 +1,63 @@
+{
+	"name": "PreviousPageLeft",
+	"plugin-id": "Sprite",
+	"sid": 329155499122743,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 347178576272212
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 199,
+						"height": 190,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8095977,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5904522613065327,
+								0,
+								1,
+								0,
+								1,
+								0.20526315789473698,
+								1,
+								0.9789473684210528,
+								0.5100502512562816,
+								0.9965666118421054,
+								0,
+								1,
+								0.001953125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 665657410387465,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

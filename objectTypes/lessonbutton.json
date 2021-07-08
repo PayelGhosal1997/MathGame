@@ -1,0 +1,100 @@
+{
+	"name": "lessonButton",
+	"plugin-id": "Sprite",
+	"sid": 646503985362156,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "goToLayout",
+			"type": "string",
+			"desc": "",
+			"sid": 594018087020291
+		},
+		{
+			"name": "Paid",
+			"type": "boolean",
+			"desc": "indicates the lesson is 'paid' or 'free'",
+			"sid": 474002812516388
+		},
+		{
+			"name": "lessonDescription",
+			"type": "string",
+			"desc": "",
+			"sid": 726837558265618
+		},
+		{
+			"name": "PaymentStatus",
+			"type": "boolean",
+			"desc": "",
+			"sid": 105476902294597
+		},
+		{
+			"name": "themeColourRED",
+			"type": "number",
+			"desc": "",
+			"sid": 981236269972928
+		},
+		{
+			"name": "themeColourGREEN",
+			"type": "number",
+			"desc": "",
+			"sid": 358019796984824
+		},
+		{
+			"name": "themeColourBLUE",
+			"type": "number",
+			"desc": "",
+			"sid": 707161133455703
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 152,
+						"height": 153,
+						"originX": 0.4911504424778761,
+						"originY": 0.48444444444444446,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8494423,
+						"collisionPoly": {
+							"points": [
+								0.03289473684210526,
+								0.032679738562091505,
+								0.5,
+								0,
+								0.9605263157894737,
+								0.032679738562091505,
+								0.993421052631579,
+								0.5,
+								0.9605263157894737,
+								0.9607843137254902,
+								0.5,
+								0.9934640522875817,
+								0.03289473684210526,
+								0.9607843137254902,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 443979797716347,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

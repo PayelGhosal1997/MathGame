@@ -1,0 +1,27 @@
+{
+	"name": "EvSplashScreen",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-loader-layout-complete",
+					"objectClass": "System",
+					"sid": 335875964956669
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 973606377975324,
+					"parameters": {
+						"layout": "MainMenu"
+					}
+				}
+			],
+			"sid": 402583445947312
+		}
+	],
+	"sid": 563826636586460
+}

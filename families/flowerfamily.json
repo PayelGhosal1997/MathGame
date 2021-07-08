@@ -1,0 +1,12 @@
+{
+	"name": "flowerFamily",
+	"plugin-id": "Sprite",
+	"sid": 345167100830800,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"flower1",
+		"flower2"
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"name": "lessonButtonFamily",
+	"plugin-id": "Sprite",
+	"sid": 287046058656909,
+	"instanceVariables": [
+		{
+			"name": "goToLayout",
+			"type": "string",
+			"desc": "",
+			"sid": 403630791142809
+		},
+		{
+			"name": "LayoutDescription",
+			"type": "string",
+			"desc": "",
+			"sid": 166472944590408
+		},
+		{
+			"name": "isPaidLayout",
+			"type": "boolean",
+			"desc": "",
+			"sid": 814136086304395
+		},
+		{
+			"name": "paymentStatus",
+			"type": "boolean",
+			"desc": "",
+			"sid": 331098018685025
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"lessonButton1",
+		"lessonButton2",
+		"lessonButton3",
+		"lessonButton4",
+		"lessonButton5"
+	]
+}

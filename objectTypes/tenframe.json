@@ -1,0 +1,57 @@
+{
+	"name": "TenFrame",
+	"plugin-id": "Sprite",
+	"sid": 385376190371994,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1668,
+						"height": 662,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9232299,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9952038369304557,
+								0.010574018126888218,
+								0.9952038369304557,
+								0.5,
+								0.9952038369304557,
+								0.9879154078549849,
+								0.5,
+								0.9879154078549849,
+								0.004196642685851319,
+								0.9879154078549849,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 516721602692218,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

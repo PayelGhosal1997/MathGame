@@ -1,0 +1,2702 @@
+{
+	"name": "Ev_L3",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Ev_MainMenu"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Ev_commonTransition"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 247606624699402
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 727068734863288,
+					"parameters": {
+						"variable": "soundCounter",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 916338983776862,
+					"parameters": {
+						"variable": "currentLayout",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 385539077761666,
+					"parameters": {
+						"variable": "currentLayer",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "LayoutDesc",
+					"sid": 914616365967400,
+					"parameters": {
+						"text": "\"Layout\"&currentLayout&\"        Layer\"&currentLayer"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 397354506027028,
+					"parameters": {
+						"layer": "currentLayer",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 476707001836675,
+					"parameters": {
+						"variable": "testLayoutName",
+						"value": "LayoutMaxLayers.At(0,2)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 648890987052020,
+					"parameters": {
+						"variable": "testMaxlayer",
+						"value": "LayoutMaxLayers.At(1,2)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 892317123241851,
+					"parameters": {
+						"variable": "currentLayoutMaxLayers",
+						"value": "(LayoutMaxLayers.At(1,2) - 1)"
+					}
+				}
+			],
+			"sid": 240079271842954
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Layout 3.Layer 0 : t sound intro ",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 852243558717436,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 524890054196797,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 867854779300620,
+							"parameters": {
+								"variable": "soundCounter",
+								"comparison": 2,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 221884375661198,
+							"parameters": {
+								"variable": "soundCounter",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 970419037814072,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 942320680857108,
+									"parameters": {
+										"variable": "soundCounter",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 401103725458662,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 310879287866318,
+									"parameters": {
+										"seconds": "2"
+									}
+								}
+							],
+							"sid": 967802011761603
+						}
+					]
+				}
+			],
+			"sid": 927286960777940
+		},
+		{
+			"eventType": "comment",
+			"text": "On layer 2 entry : 't' story"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Layout 3.Layer 1: 't' story",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 658672402441795,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 606403566039097,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 394378004501127
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 910881300710835,
+							"parameters": {
+								"object": "NextPageRight"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 859172319157858,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 315982928297951,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 356566721958171
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 293645689299328,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 972550843772465,
+							"parameters": {
+								"variable": "soundCounter",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 711031428098575
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 595741488337382,
+							"parameters": {
+								"object": "PreviousPageLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 554282660758715,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 690172323638703,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 826329650802084
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 551958350348283,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 390746741215427,
+							"parameters": {
+								"variable": "soundCounter",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 301311173129998
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 580153252447733,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 455385149652993,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 386598011060543,
+							"parameters": {
+								"variable": "soundCounter",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 627872056743711,
+							"parameters": {
+								"variable": "soundCounter",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 332768606049238
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 358097049888061,
+							"parameters": {
+								"tag": "\"t story 1\""
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 119494872789883,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 986040362482024,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 561667956802875,
+							"parameters": {
+								"variable": "soundCounter",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 953378942921092,
+							"parameters": {
+								"variable": "soundCounter",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 879267342553223
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 290422759030362,
+							"parameters": {
+								"tag": "\"t story 2\""
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 245573309088174,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 809123818913422,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 528133233771865,
+							"parameters": {
+								"variable": "soundCounter",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 277923062403367,
+							"parameters": {
+								"variable": "soundCounter",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 787315695255569
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 940624458210411,
+							"parameters": {
+								"tag": "\"t story 3\""
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 751329771174121,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 386677000202540,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 994016787237793,
+							"parameters": {
+								"variable": "soundCounter",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 942525023232362,
+							"parameters": {
+								"variable": "soundCounter",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 835821791129134
+				}
+			],
+			"sid": 346313480662315
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Layout 3.Layer 2 - 8: Different 't' objects",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "On layer 3 entry: a as in tree"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 426078770579141,
+							"parameters": {
+								"object": "NextPageRight"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 516139300456654,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 831468596285412,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 248199752152000
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 802472795262530,
+							"parameters": {
+								"seconds": "1"
+							}
+						}
+					],
+					"sid": 393883447686153
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 333932961957501,
+							"parameters": {
+								"object": "PreviousPageLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 135790046503069,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 256132339495711,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 260593944755630
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 486114345278378,
+							"parameters": {
+								"seconds": "1"
+							}
+						}
+					],
+					"sid": 937784220452011
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 171992629433637,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 926856738653495,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "Audio",
+							"sid": 397708612958554,
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 985908793605088
+				},
+				{
+					"eventType": "comment",
+					"text": "On layer 4 entry: as in  turtle and tomato"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 884372019502037,
+							"parameters": {
+								"object": "NextPageRight"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 619506525618910,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 880766639130951,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 270399509031917
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 273648543545719,
+							"parameters": {
+								"seconds": "1"
+							}
+						}
+					],
+					"sid": 516407962935332
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 317187111433669,
+							"parameters": {
+								"object": "PreviousPageLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 666914279992195,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 551672198688199,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 828167903478089
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 258455413440168,
+							"parameters": {
+								"seconds": "1"
+							}
+						}
+					],
+					"sid": 484286782014007
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 259111834808787,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 297801056068786,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "Audio",
+							"sid": 678794305912349,
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 403543590810244
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 165184855521447,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 544467754271888,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "Audio",
+							"sid": 381593463910900,
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 765304600863976
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 780328439853166,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 978172268071215,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "Audio",
+							"sid": 978473099931028,
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 620751295440386
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 440692034022599,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 269148819900693,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "Audio",
+							"sid": 367139559185221,
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 783579334148899
+				},
+				{
+					"eventType": "comment",
+					"text": "On layer 5 entry: as in tent"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 538738260300757,
+							"parameters": {
+								"object": "NextPageRight"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 411541681835875,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 786088839942047,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 622410958348484
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 985123179093494,
+							"parameters": {
+								"seconds": "1"
+							}
+						}
+					],
+					"sid": 748469767813346
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 707814172611566,
+							"parameters": {
+								"object": "PreviousPageLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 842503411501429,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 999339148978133,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 666571968270023
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 783224915254372,
+							"parameters": {
+								"seconds": "1"
+							}
+						}
+					],
+					"sid": 196810281259482
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 943963866760389,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 744300667953731,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "4"
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "Audio",
+							"sid": 472531292495452,
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 832420800545473
+				},
+				{
+					"eventType": "comment",
+					"text": "On layer 6: as in train"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 802569414595393,
+							"parameters": {
+								"object": "NextPageRight"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 709274996151787,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 906832862974534,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 217161822842576
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 656636976072654,
+							"parameters": {
+								"seconds": "1"
+							}
+						}
+					],
+					"sid": 426490904181140
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 219215077716819,
+							"parameters": {
+								"object": "PreviousPageLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 378363589845520,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 378588080655176,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 554865247185547
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 289806325048413,
+							"parameters": {
+								"seconds": "1"
+							}
+						}
+					],
+					"sid": 879904091053225
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 583799728226785,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 466962698287536,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "5"
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "Audio",
+							"sid": 143910042134252,
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 360989628155935
+				},
+				{
+					"eventType": "comment",
+					"text": "Level-6 : As in tiger"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 768360928060602,
+							"parameters": {
+								"object": "NextPageRight"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 855297155681671,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 555450528203066,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 774108544917880
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 425376784222952,
+							"parameters": {
+								"seconds": "1"
+							}
+						}
+					],
+					"sid": 507441065778405
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 390931846753792,
+							"parameters": {
+								"object": "PreviousPageLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 108780822508233,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 754986222051772,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 916037590815309
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 891705530538687,
+							"parameters": {
+								"seconds": "1"
+							}
+						}
+					],
+					"sid": 504972876461869
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 774009474072327,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 495961987858153,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "6"
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "Audio",
+							"sid": 819181205078114,
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 834484635313765
+				},
+				{
+					"eventType": "comment",
+					"text": "Level-7 : As in toys"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 657285525943235,
+							"parameters": {
+								"object": "NextPageRight"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 494979695553231,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 751550453280118,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 600624096962461
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 384643651711072,
+							"parameters": {
+								"seconds": "1"
+							}
+						}
+					],
+					"sid": 148088178522963
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 914171122680328,
+							"parameters": {
+								"object": "PreviousPageLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 905640195496200,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 506894752465032,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 149553682611609
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 936588655990830,
+							"parameters": {
+								"seconds": "1"
+							}
+						}
+					],
+					"sid": 495710674022675
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 291671949568764,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 724718405530471,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "7"
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "Audio",
+							"sid": 415713336638282,
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 430175021439415
+				},
+				{
+					"eventType": "comment",
+					"text": "On Layer 8: Touching object will make read aloud that object name"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 170401842635001,
+							"parameters": {
+								"object": "NextPageRight"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 122578724322821,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 314119710710437,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "8"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 580158464983157
+						}
+					],
+					"sid": 241151721879948
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 778811233324697,
+							"parameters": {
+								"object": "PreviousPageLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 121227322522971,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 780182648909755,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "8"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 149405483985540
+						}
+					],
+					"sid": 480605019016425
+				},
+				{
+					"eventType": "comment",
+					"text": "play 't' sound after instruction"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 477191768990699,
+							"parameters": {
+								"tag": "\"Instruction_t\""
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 941255977899824,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 567464951303691,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "8"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 890774281810482
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 354778168549329,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 478169458987558,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "8"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 525482867673752,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-any-playing",
+									"objectClass": "Audio",
+									"sid": 210617664822065,
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 418920023126141
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-any-playing",
+									"objectClass": "Audio",
+									"sid": 497827087128675,
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 819807480333865
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-any-playing",
+									"objectClass": "Audio",
+									"sid": 130394128826922,
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 725334896228721
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-any-playing",
+									"objectClass": "Audio",
+									"sid": 470710167513710,
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 196517527330744
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-any-playing",
+									"objectClass": "Audio",
+									"sid": 768545183079756,
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 608685820672750
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-any-playing",
+									"objectClass": "Audio",
+									"sid": 148009177237975,
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 790798458266906
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-any-playing",
+									"objectClass": "Audio",
+									"sid": 584218200786550,
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 258528962514905
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-any-playing",
+									"objectClass": "Audio",
+									"sid": 927815908735388,
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 563420755538319
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-any-playing",
+									"objectClass": "Audio",
+									"sid": 797961550860985,
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 506077480486096
+						}
+					]
+				}
+			],
+			"sid": 361428402609066
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "write the letter - letter tracing 't'",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 144057835422572,
+							"parameters": {
+								"object": "NextPageRight"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 983675988070852,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 650012866291323,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "9"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 551882542325336
+						}
+					],
+					"sid": 439991004656237
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 556757902929881,
+							"parameters": {
+								"object": "PreviousPageLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 698643229146867,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 313538878997687,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "9"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 460435575619930
+						}
+					],
+					"sid": 800361335777403
+				},
+				{
+					"eventType": "comment",
+					"text": "play 's' sound after instruction"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 177562038094015,
+							"parameters": {
+								"tag": "\"Instruction_2\""
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 234323431954035,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 454632933981258,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "9"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 550223276917184
+				},
+				{
+					"eventType": "comment",
+					"text": "Draw on canvas"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 225711012773874
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 813613105491971,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 555843375216545,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "9"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 343141418209473
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-any-touch-end",
+							"objectClass": "Touch",
+							"sid": 322400943301410
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 839499268327715,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 871286276323982,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "9"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 541488375536338
+						}
+					],
+					"actions": [],
+					"sid": 708964823568882
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 966355451421599
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 254326640505347,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 309342666449032,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "9"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 178501617855740
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 941782616422451
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 443777440541700,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 688835758323781,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "9"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 442407482741822
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 102286807162481
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 294137302782330,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 357175351070363,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "9"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 121672322990158
+				}
+			],
+			"sid": 721231744393654
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Layout 3 .Layer 10: Game to identify the objects starting with sound 't'",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "On click of success, play 'tring', star awards and also refresh the page for next set of objects to play; he objectSerial for 't' TRUE objects are RESERVED from 81-100; THE FALSE objects of 'a' are RESERVED from 101 - 120                                                                                                                 "
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 721253527369682,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 684341382436704,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "10"
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "Audio",
+							"sid": 725467818191406,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 553648302781513,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 765857571966376,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"callFunction": "determineDisplayObject4",
+							"sid": 768795292424592
+						},
+						{
+							"callFunction": "displayObjectOnScreen4",
+							"sid": 609579326522637
+						}
+					],
+					"sid": 227266627245939
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 170235320456962,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 841293276128760,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 154492573504958,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-any-playing",
+									"objectClass": "Audio",
+									"sid": 160267451442210,
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 212058095922853
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "On click of wrong objects, play 'bloop'"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 632897699439127,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 588445879883516,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 644834660266430,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						}
+					],
+					"sid": 339867013998480
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 776665333587816,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 462011510791303,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 411469923986297,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						}
+					],
+					"sid": 853605072083861
+				},
+				{
+					"eventType": "comment",
+					"text": "Entry and exit control of true and false objects"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 810445904957846,
+							"parameters": {
+								"object": "NextPageRight"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 545505103494322,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 596512485614000,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 986852661010251
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 608147994522880,
+							"parameters": {
+								"object": "NextPageRight"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 718708711126689,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 815229181517600,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 497066288608314
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 827729173824671,
+							"parameters": {
+								"object": "NextPageRight"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 598579533009235,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 603632069570244,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "determineDisplayObject4",
+							"sid": 850889996140295
+						},
+						{
+							"callFunction": "displayObjectOnScreen4",
+							"sid": 792355718528244
+						}
+					],
+					"sid": 439307709432814
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 530699304101272,
+							"parameters": {
+								"object": "PreviousPageLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 265552417986958,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 227762987244098,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 724674215971258
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 411373401687860,
+							"parameters": {
+								"object": "PreviousPageLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 265340805244357,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 346003426389994,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 729525825813519
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 858395714254884,
+							"parameters": {
+								"object": "PreviousPageLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 576431623876341,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 551622663951463,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "determineDisplayObject4",
+							"sid": 365989022053041
+						},
+						{
+							"callFunction": "displayObjectOnScreen4",
+							"sid": 186195940494932
+						}
+					],
+					"sid": 308925958144465
+				},
+				{
+					"eventType": "comment",
+					"text": "Layer 10: play 't' sound after instruction(instruction is given in the function call displayObjecton Screen())"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 808318232653562,
+							"parameters": {
+								"tag": "\"Instruction_1\""
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 705424585225271,
+							"parameters": {
+								"variable": "currentLayout",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 649124250670907,
+							"parameters": {
+								"variable": "currentLayer",
+								"comparison": 0,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 634126215972216
+				},
+				{
+					"eventType": "comment",
+					"text": "Layer 10: Function"
+				},
+				{
+					"functionName": "determineDisplayObject4",
+					"functionDescription": "determineDisplayObject",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": true,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 198016722604191,
+							"parameters": {
+								"variable": "falseObj1",
+								"value": "floor(random(101,114))"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 991008207119897,
+							"parameters": {
+								"variable": "falseObj2",
+								"value": "falseObj1 +1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 864535931762578,
+							"parameters": {
+								"variable": "trueObj1",
+								"value": "floor(random(81,92))"
+							}
+						}
+					],
+					"sid": 411647536883007
+				},
+				{
+					"eventType": "comment",
+					"text": "Layer 10: Function"
+				},
+				{
+					"functionName": "displayObjectOnScreen4",
+					"functionDescription": "displayObjectOnScreen",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": true,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 581321399245110,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 202012807033598,
+									"parameters": {
+										"variable": "togglePosition"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "If togglePosition is 'true', swap Position1 >> Position 3"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 823722652813292,
+									"parameters": {
+										"variable": "PositionX",
+										"value": "Position3.ImagePointX(0)"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 670323375079538,
+									"parameters": {
+										"variable": "PositionY",
+										"value": "Position3.ImagePointY(0)"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Position3",
+									"sid": 115541327750514,
+									"parameters": {
+										"x": "Position1.ImagePointX(0)",
+										"y": "Position1.ImagePointY(0)"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Position1",
+									"sid": 988164063268861,
+									"parameters": {
+										"x": "PositionX",
+										"y": "PositionY"
+									}
+								},
+								{
+									"id": "toggle-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 655234605342266,
+									"parameters": {
+										"variable": "togglePosition"
+									}
+								}
+							],
+							"sid": 997329626039455
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 551528371964344,
+									"parameters": {
+										"variable": "togglePosition"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "If togglePosition is 'false', swap Position2 >> Position 3"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 646997644955515,
+									"parameters": {
+										"variable": "PositionX",
+										"value": "Position3.ImagePointX(0)"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 636559594002345,
+									"parameters": {
+										"variable": "PositionY",
+										"value": "Position3.ImagePointY(0)"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Position3",
+									"sid": 812719055324239,
+									"parameters": {
+										"x": "Position2.ImagePointX(0)",
+										"y": "Position2.ImagePointY(0)"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Position2",
+									"sid": 234264381260123,
+									"parameters": {
+										"x": "PositionX",
+										"y": "PositionY"
+									}
+								},
+								{
+									"id": "toggle-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 313343225686594,
+									"parameters": {
+										"variable": "togglePosition"
+									}
+								}
+							],
+							"sid": 284751350282137
+						}
+					]
+				}
+			],
+			"sid": 794801733373141
+		}
+	],
+	"sid": 649882495186943
+}

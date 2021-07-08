@@ -1,0 +1,378 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 25102,
+	"name": "DTDL_Game_template_v1",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Text input",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		}
+	],
+	"uniqueId": "2cwkpykx9bf",
+	"objectTypes": {
+		"items": [
+			"lessonButton4",
+			"lessonButton1",
+			"lessonButton2",
+			"lessonButton3",
+			"lessonButton5",
+			"Text2",
+			"Text3",
+			"TenFrame",
+			"Text4",
+			"flower1",
+			"flower2",
+			"Text5",
+			"Sprite",
+			"Sprite2",
+			"TextInput"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Layout 1"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Layout 2"
+			},
+			{
+				"items": [
+					"AJAX",
+					"home",
+					"LayoutMaxLayers",
+					"LayoutDesc",
+					"lessonButton",
+					"lessonDescription",
+					"Mouse",
+					"NextPageRight",
+					"Position1",
+					"Position2",
+					"Position3",
+					"PreviousPageLeft",
+					"Text",
+					"Touch",
+					"Audio",
+					"LessonHeader"
+				],
+				"subfolders": [],
+				"name": "Common shared"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Layout 3"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"lessonButtonFamily",
+			"flowerFamily"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"MainMenu",
+					"SplashScreen",
+					"MainMenu_Set1",
+					"MainMenu_Set2",
+					"MainMenu_Set3",
+					"MainMenu_Set4"
+				],
+				"subfolders": [],
+				"name": "Common Layouts"
+			},
+			{
+				"items": [
+					"Layout 1",
+					"Layout 2",
+					"Layout 3"
+				],
+				"subfolders": [],
+				"name": "ThingsLayout"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Sound_a_t"
+			}
+		]
+	},
+	"eventSheets": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"Ev_L1",
+					"Ev_L2",
+					"Ev_L3"
+				],
+				"subfolders": [],
+				"name": "Layout_events"
+			},
+			{
+				"items": [
+					"Ev_commonTransition",
+					"Ev_MainMenu",
+					"EvSplashScreen",
+					"Ev_MainMenu_Set1",
+					"Ev_MainMenu_Set2",
+					"Ev_MainMenu_Set3",
+					"Ev_MainMenu_Set4"
+				],
+				"subfolders": [],
+				"name": "Shared Events"
+			}
+		]
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [
+				{
+					"name": "UpToSix light.ttf",
+					"type": "application/font-sfnt",
+					"sid": 332172908180909
+				},
+				{
+					"name": "UpToSixBold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 464210408714583
+				},
+				{
+					"name": "Schoolbell-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 239505863045213
+				}
+			],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 106625825430157,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 572676628087612,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 441216847660883,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 626352862350606,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 788504551306089,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 415445964778237,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 153028408014890,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "ArrayLayoutMaxLayers.json",
+					"type": "application/json",
+					"sid": 571031974910995
+				}
+			],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "com.UpToSix.phonics",
+		"version": "1.0.0.01",
+		"author": "@iTweens",
+		"authorEmail": "dev.uptosix@gmail.com",
+		"authorWebsite": "https://uptosix.co.in/",
+		"appId": "com.iTweens",
+		"pixelRounding": false,
+		"useLoaderLayout": true,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useHighDpi": true,
+		"orientations": "landscape",
+		"enableWebGL": true,
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"clearBackground": true,
+		"enhancedAccelerationPrecision": true,
+		"cordovaiOSScheme": "app"
+	},
+	"viewportWidth": 960,
+	"viewportHeight": 540,
+	"firstLayout": "MainMenu"
+}
