@@ -449,13 +449,13 @@
 					"type": "answerInput",
 					"properties": {
 						"text": "",
-						"placeholder": "type answer",
+						"placeholder": "Type answer here",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
 						"read-only": false,
 						"spell-check": false,
-						"type": "text",
+						"type": "number",
 						"auto-font-size": true,
 						"id": ""
 					},
@@ -463,10 +463,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 754,
-						"y": 206,
-						"width": 129,
-						"height": 137,
+						"x": 767,
+						"y": 207,
+						"width": 145,
+						"height": 98,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -507,11 +507,11 @@
 					}
 				},
 				{
-					"type": "answetText",
+					"type": "result",
 					"properties": {
-						"text": "Text",
+						"text": "",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "Schoolbell-Regular",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,
@@ -532,8 +532,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 746,
-						"y": 162,
+						"x": 780,
+						"y": 160,
 						"width": 200,
 						"height": 30,
 						"originX": 0,

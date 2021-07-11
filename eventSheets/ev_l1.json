@@ -2,6 +2,16 @@
 	"name": "Ev_L1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "answer",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "correct result",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 602922164720310
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "Ev_MainMenu"
 		},
@@ -105,15 +115,35 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 648359241201892
-				}
-			],
+			"conditions": [],
 			"actions": [],
 			"sid": 663378711418438
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 380870816744811,
+					"parameters": {
+						"first-value": "answer",
+						"comparison": 0,
+						"second-value": "int(answerInput.Text)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "result",
+					"sid": 845781757792144,
+					"parameters": {
+						"text": "\"Correct answer\""
+					}
+				}
+			],
+			"sid": 548732497953549
 		}
 	],
 	"sid": 397137158308878
