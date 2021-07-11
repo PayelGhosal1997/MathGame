@@ -91,8 +91,8 @@
 					"world": {
 						"x": 267,
 						"y": 195,
-						"width": 84,
-						"height": 83,
+						"width": 83,
+						"height": 81,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -446,10 +446,10 @@
 					}
 				},
 				{
-					"type": "TextInput",
+					"type": "answerInput",
 					"properties": {
 						"text": "",
-						"placeholder": "",
+						"placeholder": "type answer",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -463,8 +463,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 757,
-						"y": 189,
+						"x": 754,
+						"y": 206,
 						"width": 129,
 						"height": 137,
 						"originX": 0,
@@ -478,7 +478,7 @@
 					}
 				},
 				{
-					"type": "flower2",
+					"type": "flower3",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -490,12 +490,54 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 380,
-						"y": 197,
-						"width": 84,
-						"height": 83,
+						"x": 382,
+						"y": 196,
+						"width": 83,
+						"height": 81,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "answetText",
+					"properties": {
+						"text": "Text",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 16,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 746,
+						"y": 162,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
