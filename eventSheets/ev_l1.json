@@ -130,6 +130,16 @@
 			"sid": 663378711418438
 		},
 		{
+			"eventType": "variable",
+			"name": "sound_counter",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 296541271910438
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -140,6 +150,16 @@
 						"first-value": "answer",
 						"comparison": 0,
 						"second-value": "int(answerInput.Text)"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 360030196052264,
+					"parameters": {
+						"variable": "sound_counter",
+						"comparison": 0,
+						"value": "0"
 					}
 				}
 			],
@@ -161,6 +181,15 @@
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 355123988237282,
+					"parameters": {
+						"variable": "sound_counter",
+						"value": "1"
 					}
 				}
 			],
@@ -203,9 +232,48 @@
 					"parameters": {
 						"text": "rand_no"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 865474563256086,
+					"parameters": {
+						"variable": "sound_counter",
+						"value": "0"
+					}
 				}
 			],
 			"sid": 382266458314970
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for",
+					"objectClass": "System",
+					"sid": 906610014358567,
+					"parameters": {
+						"name": "\"object creation\"",
+						"start-index": "1",
+						"end-index": "rand_no"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 940103636962780,
+					"parameters": {
+						"object-to-create": "flower1",
+						"layer": "0",
+						"x": "100",
+						"y": "100",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 998275028472301
 		}
 	],
 	"sid": 397137158308878
