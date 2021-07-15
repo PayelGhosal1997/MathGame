@@ -12,6 +12,16 @@
 			"sid": 602922164720310
 		},
 		{
+			"eventType": "variable",
+			"name": "rand_no",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 217872120681621
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "Ev_MainMenu"
 		},
@@ -145,7 +155,7 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 783625839961384,
+					"sid": 203672166800793,
 					"parameters": {
 						"audio-file": "Correct",
 						"loop": "not-looping",
@@ -175,6 +185,23 @@
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 659856913236747,
+					"parameters": {
+						"variable": "rand_no",
+						"value": "int(random(1,10))"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "randomNoText",
+					"sid": 102971367867819,
+					"parameters": {
+						"text": "rand_no"
 					}
 				}
 			],
