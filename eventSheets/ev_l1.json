@@ -137,13 +137,37 @@
 				{
 					"id": "set-text",
 					"objectClass": "result",
-					"sid": 845781757792144,
+					"sid": 502327343701446,
 					"parameters": {
-						"text": "\"Correct answer\""
+						"text": "\"Correct\""
 					}
 				}
 			],
 			"sid": 548732497953549
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 922964740444093
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 240619622211011,
+					"parameters": {
+						"audio-file": "Can you count the flowers-",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 382266458314970
 		}
 	],
 	"sid": 397137158308878
