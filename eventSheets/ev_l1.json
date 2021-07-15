@@ -141,6 +141,17 @@
 					"parameters": {
 						"text": "\"Correct\""
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 783625839961384,
+					"parameters": {
+						"audio-file": "Correct",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 548732497953549
