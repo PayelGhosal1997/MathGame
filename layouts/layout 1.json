@@ -60,68 +60,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 382,
-						"y": 252,
+						"x": 403,
+						"y": 262,
 						"width": 578,
 						"height": 232.00000000000003,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "flower2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 11,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 267,
-						"y": 195,
-						"width": 83,
-						"height": 81,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "flower1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 10,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 151,
-						"y": 195,
-						"width": 83,
-						"height": 81,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -475,35 +417,6 @@
 							1,
 							1
 						]
-					}
-				},
-				{
-					"type": "flower3",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 14,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 382,
-						"y": 196,
-						"width": 83,
-						"height": 81,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
 					}
 				},
 				{
