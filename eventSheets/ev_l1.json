@@ -3,16 +3,6 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "answer",
-			"type": "number",
-			"initialValue": "3",
-			"comment": "correct result",
-			"isStatic": false,
-			"isConstant": true,
-			"sid": 602922164720310
-		},
-		{
-			"eventType": "variable",
 			"name": "rand_no",
 			"type": "number",
 			"initialValue": "0",
@@ -145,9 +135,9 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 380870816744811,
+					"sid": 952981767278859,
 					"parameters": {
-						"first-value": "answer",
+						"first-value": "rand_no",
 						"comparison": 0,
 						"second-value": "int(answerInput.Text)"
 					}
@@ -202,16 +192,6 @@
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 922964740444093
-				},
-				{
-					"id": "for",
-					"objectClass": "System",
-					"sid": 453936503173269,
-					"parameters": {
-						"name": "\"objects\"",
-						"start-index": "1",
-						"end-index": "rand_no"
-					}
 				}
 			],
 			"actions": [
@@ -251,30 +231,50 @@
 						"variable": "sound_counter",
 						"value": "0"
 					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "flower1",
-					"sid": 305663026807145,
-					"parameters": {
-						"width": "72",
-						"height": "72"
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 962397305769553,
-					"parameters": {
-						"object-to-create": "flower1",
-						"layer": "0",
-						"x": "1000 + loopindex(\"object_creation\")",
-						"y": "100",
-						"create-hierarchy": false
-					}
 				}
 			],
-			"sid": 382266458314970
+			"sid": 382266458314970,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 909014316766373,
+							"parameters": {
+								"name": "\"objects\"",
+								"start-index": "1",
+								"end-index": "rand_no"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 631754734554859,
+							"parameters": {
+								"object-to-create": "flower1",
+								"layer": "4",
+								"x": "40 + loopindex(\"objects\") * 115",
+								"y": "200",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "flower1",
+							"sid": 209256287352046,
+							"parameters": {
+								"width": "60",
+								"height": "60"
+							}
+						}
+					],
+					"sid": 366231489757847
+				}
+			]
 		}
 	],
 	"sid": 397137158308878
