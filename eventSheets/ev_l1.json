@@ -239,18 +239,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 518261544367691,
+					"sid": 796582403828822,
 					"parameters": {
 						"variable": "rand_no",
-						"value": "6"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "randomNoText",
-					"sid": 102971367867819,
-					"parameters": {
-						"text": "rand_no"
+						"value": "int(random(1,10))"
 					}
 				},
 				{
@@ -309,15 +301,6 @@
 								"variable": "loop_index",
 								"value": "loopindex(\"objects\")"
 							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 130086231736912,
-							"parameters": {
-								"variable": "object_x_position",
-								"value": "object_x_position + 115"
-							}
 						}
 					],
 					"sid": 366231489757847,
@@ -328,10 +311,10 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 332894601116961,
+									"sid": 551165841318683,
 									"parameters": {
 										"first-value": "loop_index",
-										"comparison": 4,
+										"comparison": 5,
 										"second-value": "5"
 									}
 								}
@@ -349,31 +332,50 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 968882606795036,
+									"sid": 417345017611880,
 									"parameters": {
 										"variable": "object_x_position",
-										"value": "160"
-									}
-								},
-								{
-									"id": "set-text",
-									"objectClass": "result",
-									"sid": 755587857009147,
-									"parameters": {
-										"text": "object_x_position"
+										"value": "object_x_position -90"
 									}
 								},
 								{
 									"id": "set-size",
 									"objectClass": "flower1",
-									"sid": 604167700365514,
+									"sid": 332949545490558,
 									"parameters": {
-										"width": "80",
-										"height": "80"
+										"width": "60",
+										"height": "60"
 									}
 								}
 							],
 							"sid": 552295021066145
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 190673127809598,
+									"parameters": {
+										"first-value": "loop_index",
+										"comparison": 2,
+										"second-value": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 831023814347656,
+									"parameters": {
+										"variable": "object_x_position",
+										"value": "object_x_position + 115"
+									}
+								}
+							],
+							"sid": 417648909035199
 						}
 					]
 				}
