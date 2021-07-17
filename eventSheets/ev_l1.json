@@ -13,6 +13,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "rand_no2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 444340521376882
+		},
+		{
+			"eventType": "variable",
 			"name": "object_y_position",
 			"type": "number",
 			"initialValue": "200",
@@ -40,6 +50,26 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 477740993600018
+		},
+		{
+			"eventType": "variable",
+			"name": "object_2_x_position",
+			"type": "number",
+			"initialValue": "150",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 449846094433209
+		},
+		{
+			"eventType": "variable",
+			"name": "loop_counter",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 733168365907073
 		},
 		{
 			"eventType": "include",
@@ -165,9 +195,9 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 952981767278859,
+					"sid": 329104421084942,
 					"parameters": {
-						"first-value": "rand_no",
+						"first-value": "rand_no+rand_no2",
 						"comparison": 0,
 						"second-value": "int(answerInput.Text)"
 					}
@@ -239,10 +269,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 796582403828822,
+					"sid": 430693688626819,
 					"parameters": {
 						"variable": "rand_no",
-						"value": "int(random(1,10))"
+						"value": "5"
 					}
 				},
 				{
@@ -301,83 +331,131 @@
 								"variable": "loop_index",
 								"value": "loopindex(\"objects\")"
 							}
-						}
-					],
-					"sid": 366231489757847,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 551165841318683,
-									"parameters": {
-										"first-value": "loop_index",
-										"comparison": 5,
-										"second-value": "5"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 114083732876951,
-									"parameters": {
-										"variable": "object_y_position",
-										"value": "310"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 417345017611880,
-									"parameters": {
-										"variable": "object_x_position",
-										"value": "object_x_position -90"
-									}
-								},
-								{
-									"id": "set-size",
-									"objectClass": "flower1",
-									"sid": 332949545490558,
-									"parameters": {
-										"width": "60",
-										"height": "60"
-									}
-								}
-							],
-							"sid": 552295021066145
 						},
 						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 190673127809598,
-									"parameters": {
-										"first-value": "loop_index",
-										"comparison": 2,
-										"second-value": "5"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 831023814347656,
-									"parameters": {
-										"variable": "object_x_position",
-										"value": "object_x_position + 115"
-									}
-								}
-							],
-							"sid": 417648909035199
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 925392091800110,
+							"parameters": {
+								"variable": "object_x_position",
+								"value": "object_x_position + 115"
+							}
 						}
-					]
+					],
+					"sid": 366231489757847
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 514525956708359,
+					"parameters": {
+						"first-value": "rand_no",
+						"comparison": 0,
+						"second-value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 359826224711887,
+					"parameters": {
+						"variable": "rand_no2",
+						"value": "int(random(-1,5))"
+					}
+				}
+			],
+			"sid": 586655217686435,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 232385582383241,
+							"parameters": {
+								"name": "\"objects_2\"",
+								"start-index": "1",
+								"end-index": "rand_no2"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 346031195079624,
+							"parameters": {
+								"first-value": "loop_counter",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 705684071395719,
+							"parameters": {
+								"object-to-create": "flower1",
+								"layer": "4",
+								"x": "object_2_x_position",
+								"y": "310",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 718963532477020,
+							"parameters": {
+								"variable": "object_2_x_position",
+								"value": "object_2_x_position + 115"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "flower1",
+							"sid": 107916960327010,
+							"parameters": {
+								"width": "60",
+								"height": "60"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 133799322842242,
+							"parameters": {
+								"variable": "rand_no2",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 608297755477562,
+							"parameters": {
+								"variable": "loop_counter",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "result",
+							"sid": 161865009681383,
+							"parameters": {
+								"text": "rand_no+rand_no2"
+							}
+						}
+					],
+					"sid": 799346533165939
 				}
 			]
 		}
