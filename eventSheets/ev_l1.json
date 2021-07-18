@@ -81,6 +81,15 @@
 								"layer": "currentLayer",
 								"visibility": "visible"
 							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 897251003852813,
+							"parameters": {
+								"tag": "\"flowers position\"",
+								"file": "flowerPosition.json"
+							}
 						}
 					],
 					"sid": 864335019322746
@@ -90,8 +99,26 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [],
-			"actions": [],
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 300808571484282,
+					"parameters": {
+						"tag": "\"flowers position\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "flower_position",
+					"sid": 488377542060148,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				}
+			],
 			"sid": 663378711418438
 		},
 		{
@@ -214,6 +241,14 @@
 								"start-index": "1",
 								"end-index": "rand_no"
 							}
+						},
+						{
+							"id": "for-each-element",
+							"objectClass": "flower_position",
+							"sid": 331518042744957,
+							"parameters": {
+								"axes": "xy"
+							}
 						}
 					],
 					"actions": [
@@ -224,6 +259,14 @@
 							"parameters": {
 								"width": "77",
 								"height": "70"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "result",
+							"sid": 651460183407006,
+							"parameters": {
+								"text": "flower_position.CurValue"
 							}
 						}
 					],

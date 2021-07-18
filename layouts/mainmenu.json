@@ -455,7 +455,18 @@
 		}
 	],
 	"sid": 645681078823107,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "flower_position",
+			"properties": {
+				"width": 2,
+				"height": 3,
+				"depth": 1
+			},
+			"uid": 10,
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 960,
 	"height": 540,

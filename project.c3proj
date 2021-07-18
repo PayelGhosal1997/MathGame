@@ -135,7 +135,8 @@
 					"Text",
 					"Touch",
 					"Audio",
-					"LessonHeader"
+					"LessonHeader",
+					"flower_position"
 				],
 				"subfolders": [],
 				"name": "Common shared"
