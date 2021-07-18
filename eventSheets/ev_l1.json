@@ -13,26 +13,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "object_y_position",
-			"type": "number",
-			"initialValue": "200",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 760514773477649
-		},
-		{
-			"eventType": "variable",
-			"name": "object_x_position",
-			"type": "number",
-			"initialValue": "150",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 591511993740754
-		},
-		{
-			"eventType": "variable",
 			"name": "loop_index",
 			"type": "number",
 			"initialValue": "0",
@@ -204,10 +184,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 796582403828822,
+					"sid": 352773063728524,
 					"parameters": {
 						"variable": "rand_no",
-						"value": "int(random(1,10))"
+						"value": "10"
 					}
 				},
 				{
@@ -238,111 +218,16 @@
 					],
 					"actions": [
 						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 346156110662931,
-							"parameters": {
-								"object-to-create": "flower1",
-								"layer": "4",
-								"x": "object_x_position",
-								"y": "object_y_position",
-								"create-hierarchy": false
-							}
-						},
-						{
 							"id": "set-size",
 							"objectClass": "flower1",
-							"sid": 209256287352046,
+							"sid": 354657043501594,
 							"parameters": {
-								"width": "60",
-								"height": "60"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 942417623109802,
-							"parameters": {
-								"variable": "loop_index",
-								"value": "loopindex(\"objects\")"
+								"width": "77",
+								"height": "70"
 							}
 						}
 					],
-					"sid": 366231489757847,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 551165841318683,
-									"parameters": {
-										"first-value": "loop_index",
-										"comparison": 5,
-										"second-value": "5"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 114083732876951,
-									"parameters": {
-										"variable": "object_y_position",
-										"value": "310"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 417345017611880,
-									"parameters": {
-										"variable": "object_x_position",
-										"value": "object_x_position -90"
-									}
-								},
-								{
-									"id": "set-size",
-									"objectClass": "flower1",
-									"sid": 332949545490558,
-									"parameters": {
-										"width": "60",
-										"height": "60"
-									}
-								}
-							],
-							"sid": 552295021066145
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 190673127809598,
-									"parameters": {
-										"first-value": "loop_index",
-										"comparison": 2,
-										"second-value": "5"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 831023814347656,
-									"parameters": {
-										"variable": "object_x_position",
-										"value": "object_x_position + 115"
-									}
-								}
-							],
-							"sid": 417648909035199
-						}
-					]
+					"sid": 366231489757847
 				}
 			]
 		}
