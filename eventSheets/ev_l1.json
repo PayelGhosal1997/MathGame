@@ -101,41 +101,6 @@
 								"layer": "currentLayer",
 								"visibility": "visible"
 							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 386104359075068,
-							"parameters": {
-								"variable": "currentLayoutMaxLayers",
-								"value": "(LayoutMaxLayers.At(1,0) -1)"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "LayoutDesc",
-							"sid": 667642615128712,
-							"parameters": {
-								"text": "\"Layout\"&currentLayout&\"        Layer\"&currentLayer"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 386728757116861,
-							"parameters": {
-								"variable": "testLayoutName",
-								"value": "LayoutMaxLayers.At(0,0)"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 802946129700440,
-							"parameters": {
-								"variable": "testMaxlayer",
-								"value": "LayoutMaxLayers.At(1,0)"
-							}
 						}
 					],
 					"sid": 864335019322746
