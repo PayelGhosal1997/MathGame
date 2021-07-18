@@ -63,7 +63,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "loop_counter",
+			"name": "res",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -213,10 +213,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 860100574113565,
+					"sid": 444657520167928,
 					"parameters": {
 						"variable": "rand_no",
-						"value": "5"
+						"value": "int(random(1,5))"
 					}
 				},
 				{
@@ -284,6 +284,15 @@
 								"variable": "object_x_position",
 								"value": "object_x_position + 115"
 							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 238210447981214,
+							"parameters": {
+								"variable": "res",
+								"value": "rand_no"
+							}
 						}
 					],
 					"sid": 366231489757847
@@ -296,9 +305,9 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 514525956708359,
+					"sid": 902304729666539,
 					"parameters": {
-						"first-value": "rand_no",
+						"first-value": "res",
 						"comparison": 0,
 						"second-value": "5"
 					}
@@ -308,7 +317,7 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 726136473421925,
+					"sid": 362536076485991,
 					"parameters": {
 						"variable": "rand_no2",
 						"value": "int(random(1,5))"
@@ -329,23 +338,13 @@
 								"start-index": "1",
 								"end-index": "rand_no2"
 							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 346031195079624,
-							"parameters": {
-								"first-value": "loop_counter",
-								"comparison": 0,
-								"second-value": "0"
-							}
 						}
 					],
 					"actions": [
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 705684071395719,
+							"sid": 287284492143918,
 							"parameters": {
 								"object-to-create": "flower1",
 								"layer": "4",
@@ -373,11 +372,20 @@
 							}
 						},
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 690914140041831,
+							"parameters": {
+								"variable": "res",
+								"value": "0"
+							}
+						},
+						{
 							"id": "set-text",
 							"objectClass": "result",
-							"sid": 547573580040920,
+							"sid": 846556671239134,
 							"parameters": {
-								"text": "rand_no2"
+								"text": "rand_no+rand_no2"
 							}
 						}
 					],
@@ -391,7 +399,7 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 426495807505414,
+					"sid": 398574370996298,
 					"parameters": {
 						"first-value": "rand_no+rand_no2",
 						"comparison": 0,
