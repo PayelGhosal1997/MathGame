@@ -193,62 +193,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 329104421084942,
-					"parameters": {
-						"first-value": "rand_no+rand_no2",
-						"comparison": 0,
-						"second-value": "int(answerInput.Text)"
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 360030196052264,
-					"parameters": {
-						"variable": "sound_counter",
-						"comparison": 0,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 203672166800793,
-					"parameters": {
-						"audio-file": "Correct",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "result",
-					"sid": 383900306549090,
-					"parameters": {
-						"text": "\"Correct\""
-					}
-				},
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 355123988237282,
-					"parameters": {
-						"variable": "sound_counter",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 548732497953549
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 922964740444093
@@ -269,7 +213,7 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 430693688626819,
+					"sid": 860100574113565,
 					"parameters": {
 						"variable": "rand_no",
 						"value": "5"
@@ -364,10 +308,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 359826224711887,
+					"sid": 726136473421925,
 					"parameters": {
 						"variable": "rand_no2",
-						"value": "int(random(-1,5))"
+						"value": "int(random(1,5))"
 					}
 				}
 			],
@@ -429,35 +373,73 @@
 							}
 						},
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 133799322842242,
-							"parameters": {
-								"variable": "rand_no2",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 608297755477562,
-							"parameters": {
-								"variable": "loop_counter",
-								"value": "1"
-							}
-						},
-						{
 							"id": "set-text",
 							"objectClass": "result",
-							"sid": 161865009681383,
+							"sid": 547573580040920,
 							"parameters": {
-								"text": "rand_no+rand_no2"
+								"text": "rand_no2"
 							}
 						}
 					],
 					"sid": 799346533165939
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 426495807505414,
+					"parameters": {
+						"first-value": "rand_no+rand_no2",
+						"comparison": 0,
+						"second-value": "int(answerInput.Text)"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 775537206377760,
+					"parameters": {
+						"variable": "sound_counter",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 323699265455736,
+					"parameters": {
+						"audio-file": "Correct",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "result",
+					"sid": 490276142177778,
+					"parameters": {
+						"text": "\"Correct\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 738526715076598,
+					"parameters": {
+						"variable": "sound_counter",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 201606411205074
 		}
 	],
 	"sid": 397137158308878
