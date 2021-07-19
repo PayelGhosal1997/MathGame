@@ -403,10 +403,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 780,
-						"y": 160,
+						"x": 713,
+						"y": 2,
 						"width": 200,
-						"height": 30,
+						"height": 193,
 						"originX": 0,
 						"originY": 0,
 						"color": [

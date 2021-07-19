@@ -79,6 +79,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Json",
+			"name": "JSON",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Sin",
 			"name": "Sine",
@@ -105,7 +113,8 @@
 			"Sprite2",
 			"answerInput",
 			"Keyboard",
-			"result"
+			"result",
+			"JSON"
 		],
 		"subfolders": [
 			{

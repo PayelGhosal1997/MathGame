@@ -12,16 +12,6 @@
 			"sid": 217872120681621
 		},
 		{
-			"eventType": "variable",
-			"name": "loop_index",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 477740993600018
-		},
-		{
 			"eventType": "include",
 			"includeSheet": "Ev_MainMenu"
 		},
@@ -85,9 +75,9 @@
 						{
 							"id": "request-project-file",
 							"objectClass": "AJAX",
-							"sid": 897251003852813,
+							"sid": 136796774499429,
 							"parameters": {
-								"tag": "\"flowers position\"",
+								"tag": "\"flowers_position_json\"",
 								"file": "flowerPosition.json"
 							}
 						}
@@ -103,9 +93,9 @@
 				{
 					"id": "on-completed",
 					"objectClass": "AJAX",
-					"sid": 300808571484282,
+					"sid": 337607107835613,
 					"parameters": {
-						"tag": "\"flowers position\""
+						"tag": "\"flowers_position_json\""
 					}
 				}
 			],
@@ -116,6 +106,22 @@
 					"sid": 488377542060148,
 					"parameters": {
 						"json": "AJAX.LastData"
+					}
+				},
+				{
+					"id": "parse",
+					"objectClass": "JSON",
+					"sid": 251856120447625,
+					"parameters": {
+						"data": "AJAX.LastData"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "result",
+					"sid": 358673711926466,
+					"parameters": {
+						"text": "JSON.ToBeautifiedString"
 					}
 				}
 			],
@@ -168,20 +174,20 @@
 					}
 				},
 				{
-					"id": "set-text",
-					"objectClass": "result",
-					"sid": 383900306549090,
-					"parameters": {
-						"text": "\"Correct\""
-					}
-				},
-				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
 					"sid": 355123988237282,
 					"parameters": {
 						"variable": "sound_counter",
 						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "result",
+					"sid": 183902689410729,
+					"parameters": {
+						"text": "\"Correct\""
 					}
 				}
 			],
@@ -241,14 +247,6 @@
 								"start-index": "1",
 								"end-index": "rand_no"
 							}
-						},
-						{
-							"id": "for-each-element",
-							"objectClass": "flower_position",
-							"sid": 331518042744957,
-							"parameters": {
-								"axes": "xy"
-							}
 						}
 					],
 					"actions": [
@@ -259,14 +257,6 @@
 							"parameters": {
 								"width": "77",
 								"height": "70"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "result",
-							"sid": 651460183407006,
-							"parameters": {
-								"text": "flower_position.CurValue"
 							}
 						}
 					],
